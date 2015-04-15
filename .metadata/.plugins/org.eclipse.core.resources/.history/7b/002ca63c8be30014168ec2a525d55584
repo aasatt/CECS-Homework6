@@ -1,5 +1,7 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+
+
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
@@ -8,7 +10,7 @@ public class CheckerBoard {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		frame.setSize(600, 600);
-		frame.setTitle("Checker Board");
+		frame.setTitle("Hello");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		BoardComponent comp = new BoardComponent();
 		frame.add(comp);
@@ -26,7 +28,9 @@ class BoardComponent extends JComponent {
 				box h = new box(i, j);
 				h.draw(g2);
 			}
-		}	
+		}
+		
+			
 	}
 }
 
